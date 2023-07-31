@@ -1,0 +1,62 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+$primary: #3a36a8;
+$danger: #ff3636;
+
+/* fieldset {
+    border: 1px solid black !important;
+} */
+
+.ikony {
+    margin: 18px 5px;
+    
+}
+
+svg {
+    width: 50px;
+    height: 50px;
+}
+
+.wallpaper {
+    background-image: url("source-code-wallpaper-2560x1080_14.jpg");
+    color: whitesmoke;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+$tt-text-color: white;
+$tt-border-color: #3a36a8;
+$tt-bg-color: black;
+$arrow-border-color: #3a36a8;
+$arrow-bg-color: black;
+
+.tooltip {
+  .tooltip-inner {
+    background: $tt-bg-color;
+    color: $tt-text-color;
+    border: 2px solid $tt-border-color;
+  }
+}
+
+.card {
+    background-clip: padding-box;
+}
+
+.card img {
+    min-height: 250px;
+    /* filtr na 100% - obrazek je cernobily, po najeti mysi se obarvi */
+    filter: grayscale(100%);
+    /* po najeti mysi plynuly a neskoci tam hned barevna verze */
+    transition: 0.2s;
+  }
+  .card:hover img {
+    /* filtr na 0% obrazek se po najeti na kartu obarvi */ 
+    filter: grayscale(0);
+  }
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
